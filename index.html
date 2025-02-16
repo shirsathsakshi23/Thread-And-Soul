@@ -3,83 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handmade Embroidery Custom Order</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        .container {
-            max-width: 500px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Handmade Embroidery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Custom Embroidery Order</h2>
-        <form action="#" method="POST" enctype="multipart/form-data">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="garment">Garment Type:</label>
-            <select id="garment" name="garment" required>
-                <option value="tshirt">T-Shirt</option>
-                <option value="saree">Saree</option>
-                <option value="kurta">Kurta</option>
-                <option value="denim">Denim Jacket</option>
-                <option value="other">Other</option>
-            </select>
-
-            <label for="design">Design Description:</label>
-            <textarea id="design" name="design" rows="4" required></textarea>
-
-            <label for="image">Upload Reference Image (optional):</label>
-            <input type="file" id="image" name="image" accept="image/*">
-
-            <button type="submit">Submit Order</button>
-        </form>
-    </div>
+    <header>
+        <h1>Handmade Embroidery</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Custom Hand-Embroidered Clothing</h2>
+        <p>Unique and beautiful embroidery on T-shirts, sarees, kurtas, and more.</p>
+        <button onclick="scrollToSection('products')">Explore</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We create custom hand-embroidered designs that add a personal touch to your wardrobe.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="tshirt.jpg" alt="Hand-Embroidered T-Shirt">
+                <p>Hand-Embroidered T-Shirt</p>
+            </div>
+            <div class="product-item">
+                <img src="saree.jpg" alt="Embroidered Saree">
+                <p>Embroidered Saree</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@embroideryshop.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Handmade Embroidery. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+            
+    
+       
